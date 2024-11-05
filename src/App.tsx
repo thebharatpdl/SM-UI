@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Image source={require('../assets/image/welcome-back.png')} style={tw`h-70 w-60`} />
 
       <Text style={tw`text-4xl font-bold text-green-700 text-center`}>
-        LinkUp!
+        ABCD!
       </Text>
 
       <View>
