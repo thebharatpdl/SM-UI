@@ -1,23 +1,23 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
-import App from '../App'; // Adjust the import path if needed
-import Signup from '../component/Signup';
-import Login from '../component/Login';
-import Coverp from '../create/Coverp';
-import CreatePost from '../create/CreatePost';
-import Notification from '../create/Notification';
-import Profile from '../create/Profile';
+import { createStackNavigator } from '@react-navigation/stack';
+import App from '../App'; // Home screen
+import Signup from '../component/Signup'; // Signup screen
+import Login from '../component/Login'; // Login screen
+import Coverp from '../create/Coverp'; // Cover page
+import CreatePost from '../create/CreatePost'; // Create Post screen
+import Notification from '../create/Notification'; // Notification screen
+import Profile from '../create/Profile'; // Profile screen
 
 // Define types for the stack navigator routes
 type RootStackParamList = {
   Home: undefined;
   Signup: undefined;
   Login: undefined;
-  Coverp: undefined;     // Added Coverp to the route list
+  Coverp: undefined;
   Notification: undefined;
-Profile:undefined;
-CreatePost:undefined;
+  Profile: undefined;
+  CreatePost: undefined;
 };
 
 // Create the stack navigator
@@ -43,27 +43,25 @@ const MainNavigator: React.FC = () => {
           options={{ headerShown: false }} 
         />
         <Stack.Screen 
-        name="Coverp" 
-        component={Coverp}
-        options={{ headerShown: false }} 
+          name="Coverp" 
+          component={Coverp}
+          options={{ headerShown: false }} 
         />
         <Stack.Screen 
-        name="Notification" 
-        component={Notification}
-        options={{ headerShown: false }} 
+          name="Notification" 
+          component={Notification}
+          options={{ headerShown: false }} 
         />
-         <Stack.Screen 
-        name="Profile" 
-        component={Profile}
-        options={{ headerShown: false }} 
+        <Stack.Screen 
+          name="Profile" 
+          component={Profile}
+          options={{ headerShown: false }} 
         />
-
-<Stack.Screen 
-        name="CreatePost" 
-        component={CreatePost}
-        options={{ headerShown: false }} 
+        <Stack.Screen 
+          name="CreatePost" 
+          component={CreatePost}
+          options={{ headerShown: false }} 
         />
-
       </Stack.Navigator>
     </NavigationContainer>
   );
