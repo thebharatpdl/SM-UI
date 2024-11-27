@@ -9,7 +9,7 @@ const InputName = () => {
       <FontAwesome name="user" size={25} color="black" style={tw`mr-3`} />
       <TextInput 
         placeholder='Enter your Name' 
-        style={tw`flex-1 text-gray-600 text-lg font-bold`} 
+        style={tw`flex-1 text-gray-500 text-lg font-bold`} 
       />
     </View>
   );
