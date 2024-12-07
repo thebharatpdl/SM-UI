@@ -95,7 +95,7 @@ const Coverp = () => {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-          <Ionicons name="person" size={30} color="black" />
+          <Ionicons name="person" size={31} color="black" />
         </TouchableOpacity>
       </View>
     </View>
